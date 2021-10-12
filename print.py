@@ -1,0 +1,5 @@
+print('================================================')
+print('Nama: Mohammad Ardi Trisnaldi')
+print('Kelas: 12.1B.35')
+print('Jurusan: Sistem Informasi')
+print('================================================')
