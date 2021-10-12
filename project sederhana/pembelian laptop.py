@@ -26,15 +26,21 @@ else:
     bonus = 'Anda tidak mendapat bonus'
 
 total_harga = jumlah_beli * harga_laptop
+uang = int(input("Masukan uang anda: "))
+kembalian = total_harga - uang
 
-print("""
-----------------------------------------------------------------
--------------------- Struk Pembelian ---------------------------
-----------------------------------------------------------------
+if uang < total_harga:
+    print("Uang anda kurang")
+else:
+    print("""
+    ----------------------------------------------------------------
+    -------------------- Struk Pembelian ---------------------------
+    ----------------------------------------------------------------
 
-\t  Nama pembeli : {} 
-\t  Anda membeli laptop : {}
-\t  Total pembelian : {}
-\t  Total harga laptop : Rp {}
-\t  {}
-""".format(pembeli, jumlah_beli, type_laptop, total_harga, bonus))
+    \t  Nama pembeli : {} 
+    \t  Anda membeli laptop : {}
+    \t  Total pembelian : {}
+    \t  Total harga laptop : Rp {}
+    \t  {}
+    """.format(pembeli, jumlah_beli, type_laptop, total_harga, bonus))
+    
